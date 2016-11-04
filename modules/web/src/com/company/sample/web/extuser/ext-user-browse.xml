@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
+        class="com.company.sample.web.extuser.ExtUserBrowse"
+        extends="/com/haulmont/cuba/gui/app/security/user/browse/user-browse.xml"
+        messagesPack="com.company.sample.web.extuser">
+    <dialogMode height="600"
+                width="800"/>
+    <layout>
+        <filter id="genericFilter"/>
+        <groupTable id="usersTable">
+            <columns>
+                <column id="department"/>
+            </columns>
+        </groupTable>
+    </layout>
+</window>

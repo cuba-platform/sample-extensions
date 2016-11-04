@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
+        caption="msg://browseCaption"
+        class="com.company.sample.web.department.DepartmentBrowse"
+        focusComponent="departmentsTable"
+        lookupComponent="departmentsTable"
+        messagesPack="com.company.sample.web.department">
+    <dsContext>
+        <collectionDatasource id="departmentsDs"
+                              class="com.company.sample.entity.Department"
+                              view="_local">
+            <query>
+                <![CDATA[select e from sample$Department e]]>
+            </query>
+        </collectionDatasource>
+    </dsContext>
+    <dialogMode height="600"
+                width="800"/>
+    <layout expand="departmentsTable"
+            spacing="true">
+        <filter id="filter"
+                applyTo="departmentsTable"
+                datasource="departmentsDs">
+            <properties include=".*"/>
+        </filter>
+        <table id="departmentsTable"
+               width="100%">
+            <actions>
+                <action id="create"
+                        openType="DIALOG"/>
+                <action id="edit"
+                        openType="DIALOG"/>
+                <action id="remove"/>
+            </actions>
+            <columns>
+                <column id="name"/>
+            </columns>
+            <rows datasource="departmentsDs"/>
+            <rowsCount/>
+            <buttonsPanel id="buttonsPanel"
+                          alwaysVisible="true">
+                <button id="createBtn"
+                        action="departmentsTable.create"/>
+                <button id="editBtn"
+                        action="departmentsTable.edit"/>
+                <button id="removeBtn"
+                        action="departmentsTable.remove"/>
+            </buttonsPanel>
+        </table>
+    </layout>
+</window>
