@@ -10,4 +10,6 @@ Suppose you have `Department` entity in your project and you want to add an attr
 
 - The `ext-user-browse.xml` and `ext-user-edit.xml` screens extend the corresponding screens from the platform. They have the same identifiers as base screens.
 
+- The message pack of the new screens includes the message packs of base screens. See `com/company/sample/web/extuser/messages.properties`.
+
 Based on CUBA Platform 6.3.2
