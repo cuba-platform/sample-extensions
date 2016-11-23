@@ -12,4 +12,4 @@ Suppose you have `Department` entity in your project and you want to add an attr
 
 - The message pack of the new screens includes the message packs of base screens. See `com/company/sample/web/extuser/messages.properties`.
 
-Based on CUBA Platform 6.3.3
+Based on CUBA Platform 6.3.4
