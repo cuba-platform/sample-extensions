@@ -12,4 +12,6 @@ Suppose you have `Department` entity in your project and you want to add an attr
 
 - The message pack of the new screens includes the message packs of base screens. See `com/company/sample/web/extuser/messages.properties`.
 
+- There is a custom main window: `ext-mainwindow.xml`, adding a label for displaying department of a current user. In its controller `ExtAppMainWindow`, the user is reloaded with a view containing `department` attribute and the department name is set to the label.
+
 Based on CUBA Platform 6.6.1

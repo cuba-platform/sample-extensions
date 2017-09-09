@@ -9,4 +9,6 @@
             template="com/company/sample/web/extuser/ext-user-browse.xml"/>
     <screen id="sec$User.edit"
             template="com/company/sample/web/extuser/ext-user-edit.xml"/>
+    <screen id="mainWindow"
+            template="com/company/sample/web/screens/ext-mainwindow.xml"/>
 </screen-config>
