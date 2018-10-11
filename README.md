@@ -14,7 +14,7 @@ Suppose you have `Department` entity in your project and you want to add an attr
 
 - There is a custom main window: `ext-mainwindow.xml`, adding a label for displaying department of a current user. In its controller `ExtAppMainWindow`, the user is reloaded with a view containing `department` attribute and the department name is set to the label.
 
-Based on CUBA Platform 6.9.1
+Based on CUBA Platform 6.10.1
 
 ## Issues
 Please use https://www.cuba-platform.com/discuss for discussion, support, and reporting problems coressponding to this sample.
